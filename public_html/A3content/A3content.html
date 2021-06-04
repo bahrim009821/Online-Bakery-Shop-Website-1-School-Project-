@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Assignment 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Style/Shopping Cart Style.css">
+        <script type="text/javascript" src="./Script/Shopping Cart Script.js"></script>
+
+    </head>
+    <body onload="showInfo();
+            showInfo2();
+            showInfo3();
+            showInfo4();
+            shwoTotalPrice();
+            defaultValue();">
+        <h3 id="header1">Shopping Cart</h3>
+        <table>
+            <tr> 
+                <th> Product </th>
+                <th> Quantity </th>
+                <th> Price </th>
+            </tr>
+            <tr>
+                <td id="row1" >  </td>
+                <td id="row2"> </td>
+                <td id="row3"> </td>
+            </tr>
+            <tr>
+                <td id="row4" >  </td>
+                <td id="row5"> </td>
+                <td id="row6"> </td>
+            </tr>
+            <tr>
+                <td id="row7" >  </td>
+                <td id="row8"> </td>
+                <td id="row9"> </td>
+            </tr>
+            <tr>
+                <td id="row10" >  </td>
+                <td id="row11"> </td>
+                <td id="row12"> </td>
+            </tr>
+        </table>
+        <h3 id="totalPrice"> </h3>
+
+        <!--        <button type="button" id="confirmOrder" onclick="confirmation();">Confirm Your Order</button>-->
+        <button class="button" style="vertical-align:middle" onclick="confirmation();"><span> Confirm Your Order </span></button>
+
+
+
+        <h3> Please Enter Your Information Bellow</h3>
+
+        <form action="Content/Shopping Cart php.php" method="POST">
+            <br><br>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="address">Shipping Address:</label>
+            <input type="text" id="address" name="address"><br><br>
+
+            <h5> Choose a Method of Shipping </h5>
+            <input type="checkbox"  name="fast" value="fast">
+            <label for="fast">Fast Shipping </label><br>
+            <input type="checkbox" name="normal" value="normal">
+            <label for="normal">Normal Shipping</label><br>
+
+            <h5> Choose a Method of Payment </h5>
+            <input type="checkbox"  name="visa" value="visa">
+            <label for="visa">visa</label><br>
+            <input type="checkbox" name="MasterCard" value="MasterCard">
+            <label for="MasterCard">Master Card</label><br>
+            <input type="checkbox" name="other" value="other">
+            <label for="other">Other</label><br><br>
+            <input type = "submit" value = "Submit"><br><br>
+            <a href="../index.html"> <button type="button"> Cancel </button> </a> <br><br>
+        </form>
+    </body>
+</html>

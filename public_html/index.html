@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MO-Bakery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Style/LayoutStyle.css">
+        <script type="text/javascript" src="Script/Assg1Script.js"></script>
+
+    </head>
+    <body onload="startUp();">
+        <header>    
+            <!--  <img src="Images/header.jpg" alt="Header image">  -->
+            <h3> M0-Doughnut</h3>
+        </header>  
+
+        <section id="sec1">
+            <nav><a href="A2content/A2content.html">Link To A2 Web Page</a></nav>
+            <nav><a href="A3content/A3content.html">Shopping Cart</a></nav>
+            <nav><a href="A4content/A4content.html">Link To A4 Web Page</a>
+
+        </section>
+        <section id="MenuHeader">
+            <nav>  Bakery Fresh  </nav>
+        </section>
+        <main id="main1">
+
+            <section id="product1">
+                <h3>Chocolate Donut</h3>
+                <p id="orderChocolate" onclick="orderChocolate();"> Click Here To Order </p>
+                <div onmouseover="chocolateDonutDescription();" onmouseout="noDescription();" id="picaddress1">
+                    <img  id="pic1" src="Images/chocolate.jpg" alt="chocolate" width="297" height="197">
+                    <p id="para1"></p>
+                </div>
+
+                <p id="totalorderChocolate" onload="chocolateDonutDescription();"> </p>
+                <p class="changeOrder" onclick="orderChocolate();"> Would you like to change your order</p>
+
+            </section>
+
+            <section id="product2">
+                <h3>Strawberry Donut</h3>
+                <p id="orderStrawbery" onclick="orderStrawbery();"> Click Here To Order </p>
+                <div onmouseover="strawberryDonutDescription();" onmouseout="noDescription2();" id="picaddress2">
+                    <img id="pic2" src="Images/strawberry.jpg" alt="strawberry" width="297" height="197">
+                    <p id="para2"></p>
+                </div>
+                <p id="totalorderStrawberry" onload="orderStrawbery();"> </p>
+                <p class="changeOrder" onclick="orderStrawbery();"> Would you like to change your order</p>
+
+            </section>
+
+            <section id="product3">
+                <h3>Blueberry Donut</h3>
+                <p id="orderBlueberry" onclick="orderBlueberry();"> Click Here To Order </p>
+                <div onmouseover="blueberryDonutDescription();" onmouseout="noDescription3();" id="picaddress3">
+                    <img id="pic3" src="Images/blueberry.jpg" alt="blueberry" width="297" height="197">
+                    <p id="para3"></p>
+                </div>
+                <p id="totalorderBlueberry" onload="orderBlueberry();"> </p>
+                <p class="changeOrder" onclick="orderBlueberry();"> Would you like to change your order</p>
+
+            </section>
+            <section id="product4">
+                <h3>Special Donut</h3>
+                <p id="orderSpecial" onclick="orderSpecial();"> Click Here To Order </p>
+                <div onmouseover="specialDonutDescription();" onmouseout="noDescription4();" id="picaddress4">
+                    <img  id="pic4"  src="Images/special.jpg" alt="special" width="297" height="197">
+                    <p id="para4"></p>
+                </div>
+                <p id="totalorderSpecial" onload="orderSpecial();"> </p>
+                <p class="changeOrder" onclick="orderSpecial();"> Would you like to change your order</p>
+
+            </section>
+        </main>
+        <footer> 
+            <p class="footer">Contact Information:123-456-7890</p> 
+            <p class="footer">Website: www.mo bakery.com</p>
+            <p class="footer"> Order Online (No Extra Fees)</p>
+        </footer>
+    </body>
+</html>

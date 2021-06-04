@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../A4content/Style/db Content Style.css">
+
+    </head>
+    <body>
+        <h2 id="header">Lets See How you Did This Semester</h2>
+        <form action="dbContent/addContent.php" method="post">
+            <h3>Please Enter Your Grades Here</h3>
+            Student ID: <input type="text" name="StudentID" size="22"><br><br>
+            Math Grade: <input type="text" name="Math" size="21"><br><br>
+            History Grade: <input type="text" name="History" size="19"><br><br>
+            Art Grade: <input type="text" name="Art" size="24"><br><br>
+            Culture Grade:<input type="text" name="Culture" size="20"><br><br>
+            Physics Grade: <input type="text" name="Physics" size="19"><br><br>
+            <!--<input type="submit" value="Send Data">  <br>-->
+            <button class="button button3" value="submit">Submit Your Marks</button>
+
+        </form>
+
+        <form action="dbContent/getContent.php" >
+            <button class="button button3" value="submit">See All Your Marks</button>
+        </form>
+    </body>
+</html>
